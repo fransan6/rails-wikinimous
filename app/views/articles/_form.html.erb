@@ -1,0 +1,7 @@
+<%= form_with model: article do |f| %>
+  <%= f.label 'Article title:', class: "label bold-text form-display" %>
+  <%= f.text_field :title, class: "form-display" %>
+  <%= f.label 'Content:', class: "label bold-text form-display" %>
+  <%= f.text_field :content, id: "above-submit", class: "form-display" %>
+  <%= f.submit "Submit", id: "button" %>
+<% end %>

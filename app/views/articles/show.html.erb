@@ -1,0 +1,10 @@
+<div class="container">
+  <h1><%= @article.title %></h1>
+  <p><%= @article.content %></p>
+
+  <p><%= link_to 'Back to all articles', articles_path %></p>
+  <p><%= link_to 'Edit article', edit_article_path(@article) %></p>
+  <p><%= link_to articles_path, data: {turbo_method: :delete, turbo_confirm: "Delete '#{@article.title}'?"} do %>
+    Delete? <i class="fa-solid fa-cat"></i>
+  <% end %></p>
+</div>
