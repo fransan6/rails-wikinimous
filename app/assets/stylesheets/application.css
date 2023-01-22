@@ -25,14 +25,9 @@ body {
 }
 
 .container {
-  width: 75%;
-  margin: 0 auto;
-  padding: 10px;
-  background-color: pink;
-}
-
-a.homepage {
-  padding: 0;
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
 }
 
 h1 {
@@ -44,16 +39,32 @@ a {
 }
 
 .homepage {
-  margin-left: 20px;
-  margin-top: 30px;
-  font-size: 22px;
-  font-weight: bold;
-  color: red;
+  color: #5E5E5E;
+  float: left;
+  padding: 20px;
+}
+
+.new-article {
+  color: #5E5E5E;
+  float: right;
+  padding: 20px;
+}
+
+.article-title:hover {
+  color: orange;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.article-title {
+  color: orangered
 }
 
 #banner {
   height: 60px;
-  background-color: rgb(255, 218, 238);
-  padding: 0;
-  background-size: cover;
+  background-color: #F8F8F8;
+  position: relative
 }

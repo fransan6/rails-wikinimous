@@ -1,13 +1,13 @@
-<div id="banner"><%= link_to 'Wikinominous', articles_path, class: 'homepage' %></div>
+<div id="banner">
+  <%= link_to 'Wikinominous', articles_path, class: 'homepage' %>
+  <%= link_to 'Add a new article', new_article_path, class: 'new-article' %>
+</div>
+
 <div class="container">
-  <h1>Wikinimous</h1>
-
-  <article>
     <% @articles.each do |article| %>
-    <h2><%= link_to article.title, article_path(article) %></h2>
-    <p><%= article.content %></p>
+      <article>
+      <h2><%= link_to article.title, article_path(article), class: 'article-title' %></h2>
+      <%= article.content %>
+    </article>
     <% end %>
-  </article>
-
-  <p><%= link_to 'Add a new article', new_article_path %></p>
 </div>
